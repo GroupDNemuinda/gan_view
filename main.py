@@ -43,6 +43,7 @@ def upload_image():
     if filename[-3:] == 'jpg':
         file_obj.save('./images/fish.png')
     else:
+        print(filename)
         return '失敗しました', 400
     return redirect(url_for('index'))
 
